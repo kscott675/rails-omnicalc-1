@@ -1,0 +1,20 @@
+<form action="/random/results" method="post">
+  <div>
+    <label for="min_input">
+      Minimum
+    </label>
+
+    <input type="text" id="min_input" name="user_min" placeholder="Eg: 1.5">
+  </div>
+
+  <div>
+    <label for="max_input">Maximum</label>
+    <input type="text" id="max_input" name="user_max" placeholder="Eg: 4.5">
+  </div>
+
+  <button type="submit">Pick random number</button>
+</form>
+
+<% if @error_message %>
+  <p><%= @error_message %></p>
+<% end %>
